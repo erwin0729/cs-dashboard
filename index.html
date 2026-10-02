@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CS Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;width:100%;min-height:100%;background:#000;font-family:'Figtree',sans-serif;}
+  body{
+    display:flex;align-items:center;justify-content:center;
+    min-height:100vh;padding:24px;
+  }
+  .landing-wrap{width:100%;max-width:560px;text-align:center;}
+  .landing-title{
+    font-size:clamp(24px,5vw,32px);font-weight:400;color:#FFFFFF;
+    margin:0 0 36px;letter-spacing:-.01em;
+  }
+  .landing-buttons{
+    display:flex;flex-direction:column;gap:16px;
+  }
+  .landing-btn{
+    display:block;width:100%;
+    font-family:'Figtree',sans-serif;font-weight:400;font-size:17px;color:#FFFFFF;
+    text-decoration:none;
+    padding:20px 28px;border-radius:14px;border:1px solid #2B2B2E;
+    transition:transform .15s ease, opacity .15s ease;
+  }
+  .landing-btn:hover{transform:translateY(-2px);opacity:0.92;}
+  .landing-btn.dashboard{background:linear-gradient(135deg, #015a7f 0%, #15d7aa 100%);}
+  .landing-btn.ticket{background:linear-gradient(135deg, #fb932b 0%, #f3353f 100%);}
+</style>
+</head>
+<body>
+  <div class="landing-wrap">
+    <h1 class="landing-title">How can we help you?</h1>
+    <div class="landing-buttons">
+      <a href="dashboard.html" class="landing-btn dashboard">View the Dashboard</a>
+      <a href="ticket.html" class="landing-btn ticket">File a Ticket</a>
+    </div>
+  </div>
+</body>
+</html>
